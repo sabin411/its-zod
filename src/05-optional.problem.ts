@@ -5,11 +5,11 @@ import { z } from "zod";
 
 const Form = z.object({
   name: z.string(),
-  phoneNumber: z.string(),
+  phoneNumber: z.string().optional(),
   //                     ^ 🕵️‍♂️
 });
 
-export const validateFormInput = (values: unknown) => {
+export const validateFormInput = (values: z.infer<typeof Form>) => {
   const parsedData = Form.parse(values);
 
   return parsedData;
@@ -21,17 +21,17 @@ it("Should validate correct inputs", async () => {
   expect(() =>
     validateFormInput({
       name: "Matt",
-    }),
+    })
   ).not.toThrow();
 
   expect(() =>
     validateFormInput({
       name: "Matt",
       phoneNumber: "123",
-    }),
+    })
   ).not.toThrow();
 });
 
 it("Should throw when you do not include the name", async () => {
-  expect(() => validateFormInput({})).toThrowError("Required");
+  expect(() => validateFormInput({ name: "sabin" })).toThrowError("Required");
 });
