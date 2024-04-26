@@ -1,6 +1,6 @@
 # Zod Tutorial
 
-<a href="https://totaltypescript.com/tutorials/zod"><img src="[https://res.cloudinary.com/total-typescript/image/upload/v1709295832/github--zod-tutorial_2x_nuxnyj.jpg" alt="zod tutorial](https://res.cloudinary.com/total-typescript/image/upload/v1714155650/certificate/35056eb4-1c0e-4c19-a390-5527bb21e53d/zod.png)" />Watch on TotalTypeScript.com</a>
+<a href="https://totaltypescript.com/tutorials/zod"><img src="https://res.cloudinary.com/total-typescript/image/upload/v1714155650/certificate/35056eb4-1c0e-4c19-a390-5527bb21e53d/zod.png" />Watch on TotalTypeScript.com</a>
 
 This Zod tutorial will give you everything you ever needed to know about [Zod](https://github.com/colinhacks/zod) - an amazing library for building type-safe AND runtime-safe applications.
 
